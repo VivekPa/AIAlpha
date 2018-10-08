@@ -3,4 +3,4 @@
 
 [![GitHub license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://github.com/VivekPa/AlphaAI/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-This project is meant to be an $advanced$ implementation of stacked neural networks to predict the return of stocks. 
+This project is meant to be an **advanced** implementation of **stacked neural networks** to predict the return of stocks. 
