@@ -18,7 +18,6 @@ I truly hope you find this project informative and useful in developing your own
 - [Contents](#contents)
 - [Overview](#overview)
 - [Quickstart](#quickstart)
-- [Preliminaries](#preliminaries)
 - [Stock Price Data](#stock-price-data)
 - [Preprocessing](#preprocessing)
   - [Preparing Autoencoder Train Dataset](#preparing-train-dataset)
@@ -56,3 +55,19 @@ As you can see, this pipeline is much longer, and even a bit confusing at first 
 ![alt text][flowchart]
 
 [flowchart]: https://engfinance.files.wordpress.com/2018/10/alphaai-flowchart.png "Pipeline Flowchart"
+
+Now let me elaborate the various parts of the pipeline.
+
+## Quickstart
+
+For those who just want to see the model work, run the following code (make sure you are on Python 3 to prevent any bugs or errors):
+
+```bash
+pip install -r requirements.txt
+python full_run.py
+```
+## Stock Price Data
+
+We are going to use Yahoo Finance API to get our stock data. However, since the API is being shut down, it might be a good idea to develop your own stock database. 
+
+
