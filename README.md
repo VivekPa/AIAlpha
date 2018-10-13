@@ -20,17 +20,16 @@ I truly hope you find this project informative and useful in developing your own
 - [Quickstart](#quickstart)
 - [Stock Price Data](#stock-price-data)
 - [Preprocessing](#preprocessing)
-  - [Preparing Autoencoder Train Dataset](#preparing-train-dataset)
-  - [Preparing Autoencoder Test Dataset](#preparing-test-dataset)
 - [Stacked Autoencoder](#stacked-autoencoder)
-- [Data Processing](#data-processing)
+- [Generating Datasets](#generating-datasets)
   - [Preparing Train Dataset](#preparing-train-dataset)
   - [Preparing Test Dataset](#preparing-test-dataset)
 - [Neural Network Model](#neural-network-model)
-  - [LSTM Model](#lstm-model)
 - [Backtesting](#backtesting)
 - [Stock Predictions](#stock-predictions)
 - [Online Learning](#online-learning)
+- [Reinforcement Learning](#reinforcement-learning)
+- [Walkforward Testing](#walkforward-testing)
 - [What next?](#what-next?)
   - [Getting Data](#getting-data)
   - [Neural Network Model](#neuron-network-model)
@@ -48,13 +47,13 @@ Those who have done some form of machine learning would know that the workflow f
 5. Use the neural network to learn from the training data.
 6. Test the model with the testing set - this gives us a gauge of how good our model is.
 7. Make useful stock price predictions 
-8. Supplement your trading strategies with the predictions
+8. Use Reinforcement learning to come up with a trading agent.
 
 As you can see, this pipeline is much longer, and even a bit confusing at first glance. Perhaps this flowchart will make things simpler:
 
 ![alt text][flowchart]
 
-[flowchart]: https://engfinance.files.wordpress.com/2018/10/alphaai-flowchart.png "Pipeline Flowchart"
+[flowchart]: https://engfinance.files.wordpress.com/2018/10/alphaai_diagram_final.png "Pipeline Flowchart"
 
 Now let me elaborate the various parts of the pipeline.
 
