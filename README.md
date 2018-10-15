@@ -75,15 +75,15 @@ Using this stacked neural network model, I was able to achieve pretty good resul
 
 Chevrons - MSE: 2.11
 
-![alt text][Chevron Prediction]
+![alt text][Chevron]
 
-[flowchart]: https://engfinance.files.wordpress.com/2018/10/cvx-prices.png "Chevron Prediction"
+[chevron]: https://engfinance.files.wordpress.com/2018/10/cvx-prices.png "Chevron Prediction"
 
 Exxon - MSE: 0.0945
 
-![alt text][Exxon Prediction]
+![alt text][Exxon]
 
-[flowchart]: https://engfinance.files.wordpress.com/2018/10/xom-prices.png "Exxon Prediction"
+[exxon]: https://engfinance.files.wordpress.com/2018/10/xom-prices.png "Exxon Prediction"
 
 ## Online Learning
 
