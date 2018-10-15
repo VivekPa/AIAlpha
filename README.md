@@ -18,12 +18,8 @@ I truly hope you find this project informative and useful in developing your own
 - [Contents](#contents)
 - [Overview](#overview)
 - [Quickstart](#quickstart)
-- [Stock Price Data](#stock-price-data)
-- [Preprocessing](#preprocessing)
+- [Wavelet Transform](#wavelet-transform)
 - [Stacked Autoencoder](#stacked-autoencoder)
-- [Generating Datasets](#generating-datasets)
-  - [Preparing Train Dataset](#preparing-train-dataset)
-  - [Preparing Test Dataset](#preparing-test-dataset)
 - [Neural Network Model](#neural-network-model)
 - [Backtesting](#backtesting)
 - [Stock Predictions](#stock-predictions)
@@ -65,8 +61,12 @@ For those who just want to see the model work, run the following code (make sure
 pip install -r requirements.txt
 python full_run.py
 ```
-## Stock Price Data
+## Wavelet Transform
 
-We are going to use Yahoo Finance API to get our stock data. However, since the API is being shut down, it might be a good idea to develop your own stock database. 
+The objective at this stage is to denoise the stock price data, which, due to complex market dynamics, are usually unncessarily noisy. This noisy can cloud up the machine learning algorithm and produce poorer results. Hence, I have chosen to use the wavelet transform to denoise the data. This can be done using the library `pywt` which is excellent for those interested in using wavelet transforms. 
+
+## Stacked Autoencoder
+
+Feature extraction is a crucial part of building an effective machine learning model, but often involves expert domain knowledge. 
 
 
