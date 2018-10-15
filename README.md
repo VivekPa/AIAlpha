@@ -74,11 +74,13 @@ Using neural networks for the prediction of time series has become widespread an
 Using this stacked neural network model, I was able to achieve pretty good results. The following are graphs of my predictions vs the actual stock prices for various companies.
 
 Chevrons - MSE: 2.11
+
 ![alt text][Chevron Prediction]
 
 [flowchart]: https://engfinance.files.wordpress.com/2018/10/cvx-prices.png "Chevron Prediction"
 
 Exxon - MSE: 0.0945
+
 ![alt text][Exxon Prediction]
 
 [flowchart]: https://engfinance.files.wordpress.com/2018/10/xom-prices.png "Exxon Prediction"
