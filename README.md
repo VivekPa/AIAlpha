@@ -77,7 +77,7 @@ EURUSD:
 
 ![alt text][EURUSD]
 
-[EURUSD Returns]: https://engfinance.files.wordpress.com/2018/11/figure_1-4.png "Prediction 2"
+[EURUSD Returns]: https://engfinance.files.wordpress.com/2018/11/figure_1-4.png "Prediction 1"
 
 EURUSD prices - R^2: 0.90
 
