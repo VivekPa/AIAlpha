@@ -67,23 +67,17 @@ Feature extraction is a crucial part of building an effective machine learning m
 
 ## Neural Network Model
 
-Using neural networks for the prediction of time series has become widespread and the power of LSTM neural networks is well known. I have also chosen to use LSTM neural networks to predict the stock return given the features extracted from our data. LSTM gets its advantage from the cell state, which allows the system to have a 'memory' of previous time steps and use it to analyse longer term trends and predict the next time step. 
+Using neural networks for the prediction of time series has become widespread and the power of neural networks is well known. I have also chosen to use multilayer perceptron neural networks to predict the stock return given the features extracted from our data. I have found that MLP has a greater predictive power compared to LSTM due to the autoencoding, which results in the loss of the time series nature of the data. 
 
 ## Results
 
-Using this stacked neural network model, I was able to achieve pretty good results. The following are graphs of my predictions vs the actual stock prices for various companies.
+Using this stacked neural network model, I was able to achieve pretty good results. The following are graphs of my predictions vs the actual market prices for various securities.
 
-Chevrons - MSE: 2.11
+EURUSD returns - R^2: 
 
-![alt text][Chevron]
+![alt text][EURUSD Returns]
 
 [chevron]: https://engfinance.files.wordpress.com/2018/10/cvx-prices.png "Chevron Prediction"
-
-Exxon - MSE: 0.0945
-
-![alt text][Exxon]
-
-[exxon]: https://engfinance.files.wordpress.com/2018/10/xom-prices.png "Exxon Prediction"
 
 ## Online Learning
 
