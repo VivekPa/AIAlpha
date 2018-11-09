@@ -76,11 +76,13 @@ Using this stacked neural network model, I was able to achieve pretty good resul
 EURUSD
 
 ![alt text][EURUSD]
+
 [EURUSD]: https://engfinance.files.wordpress.com/2018/11/figure_1-4.png "Prediction 1"
 
 EURUSD prices - R^2: 0.90
 
 ![alt text][EURUSD2]
+
 [EURUSD2]: https://engfinance.files.wordpress.com/2018/11/figure_1-5.png "Prediction 2"
 
 
