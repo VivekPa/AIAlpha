@@ -73,16 +73,14 @@ Using neural networks for the prediction of time series has become widespread an
 
 Using this stacked neural network model, I was able to achieve pretty good results. The following are graphs of my predictions vs the actual market prices for various securities.
 
-EURUSD:
+EURUSD
 
 ![alt text][EURUSD]
-
 [EURUSD Returns]: https://engfinance.files.wordpress.com/2018/11/figure_1-4.png "Prediction 1"
 
 EURUSD prices - R^2: 0.90
 
 ![alt text][EURUSD different time period]
-
 [EURUSD Returns]: https://engfinance.files.wordpress.com/2018/11/figure_1-5.png "Prediction 2"
 
 
