@@ -11,6 +11,8 @@ This model is not meant to be used to live trade without modifications. However,
 
 I truly hope you find this project informative and useful in developing your own trading strategies or machine learning models. If you found this project interesting, do **leave a star**.
 
+*This project illustrates how to use machine learning to predict the future prices of stocks. In order to efficiently allocate the capital to those stocks, check out [OptimalPortfolio](https://github.com/VivekPa/OptimalPortfolio)*
+
 *Disclaimer, this is purely an educational project. Any backtesting performance do not guarentee live trading results. Trade at your own risk.*
 *This is only a guide on the usage of the model. If you want to delve into the reasoning behind the model and the theory, please check out my blog: [Engineer Quant](https://medium.com/engineer-quant)*
 
