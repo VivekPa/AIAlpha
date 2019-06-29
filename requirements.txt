@@ -1,11 +1,7 @@
-bokeh 
 numpy 
 scipy 
 scikit-learn 
 Keras 
-pandas_datareader 
-pywt 
-fix_yahoo_finance 
 tensorflow 
 matplotlib 
 pandas 
@@ -14,4 +10,3 @@ nltk
 rpy2 
 textblob 
 vaderSentiment 
-pywavelets
