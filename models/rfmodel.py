@@ -17,10 +17,10 @@ class RFModel:
         self.model.fit(x, y, sample_weight=sample_weights)
 
     def test_model(self, x, y, sample_weights=None):
-        model_acc = self.model.score(x, y, sample_weight=sample_weights)
+        # model_acc = self.model.score(x, y, sample_weight=sample_weights)
 
-        zeros_count = y['y_values'].value_counts().loc[0]
-        null_acc = zeros_count/len(y)
+        # zeros_count = y['y_values'].value_counts().loc[0]
+        # null_acc = zeros_count/len(y)
         
         y_true = pd.DataFrame(index=y.index)
         y_true.loc[y['y_values'] == 1, 'up'] = 1
