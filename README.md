@@ -95,15 +95,33 @@ For the random forest classification model, the results were better. I used tick
 The base case used is merely predicting no moves in the market. The out of sample results were:
 
 ```bash
-Model log loss: 0.17
-Base log loss: 0.47
+Tick bars:
+    Model log loss: 2.78
+    Base log loss: 4.81
+
+Volume bars:
+    Model log loss: 1.69
+    Base log loss: 5.06
+
+Dollar bars:
+    Model log loss: 2.56
+    Base log loss: 2.94
 ```
 
 It is also useful to understand how much of an impact the autoencoders made, so I ran the model without autoencoders and the results were:
 
 ```bash
-Model log loss: 0.55
-Base log loss: 0.47
+Tick bars:
+    Model log loss: 5.12
+    Base log loss: 4.81
+
+Volume bars:
+    Model log loss: 3.25
+    Base log loss: 5.06
+
+Dollar bars:
+    Model log loss: 3.62
+    Base log loss: 2.94
 ```
 
 
