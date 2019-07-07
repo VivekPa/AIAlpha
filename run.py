@@ -8,18 +8,18 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
 
-# print('Processing data...')
-# preprocess = DataProcessing(0.8)
-# df = preprocess.make_features(file_path=f"price_bars/dollar_bars.csv", window=20,  
-#     csv_path="autoencoder_data", save_csv=True)
-# fulldata, y_values, train_x, train_y, test_x, test_y =  preprocess.make_train_test(df_x=df, df_y=None, window=1, 
-# csv_path="autoencoder_data", save_csv=True)
+print('Processing data...')
+preprocess = DataProcessing(0.8)
+df = preprocess.make_features(file_path=f"sample_data/processed_data/price_bars/dollar_bars.csv", window=20,  
+    csv_path="sample_data/processed_data/autoencoder_data", save_csv=True)
+fulldata, y_values, train_x, train_y, test_x, test_y =  preprocess.make_train_test(df_x=df, df_y=None, window=1, 
+csv_path="sample_data/processed_data/autoencoder_data", save_csv=True)
 
 print('Loading data...')
-a_train_x = pd.read_csv('data/processed_data/autoencoder_data/train_x.csv', index_col=0)
-a_train_y = pd.read_csv('data/processed_data/autoencoder_data/train_y.csv', index_col=0)
-a_test_x = pd.read_csv('data/processed_data/autoencoder_data/test_x.csv', index_col=0)
-a_test_y = pd.read_csv('data/processed_data/autoencoder_data/test_y.csv', index_col=0)
+a_train_x = pd.read_csv('sample_data/processed_data/autoencoder_data/train_x.csv', index_col=0)
+a_train_y = pd.read_csv('sample_data/processed_data/autoencoder_data/train_y.csv', index_col=0)
+a_test_x = pd.read_csv('sample_data/processed_data/autoencoder_data/test_x.csv', index_col=0)
+a_test_y = pd.read_csv('sample_data/processed_data/autoencoder_data/test_y.csv', index_col=0)
 print(a_train_x.head())
 print(a_train_x.shape)
 
@@ -38,24 +38,24 @@ x_test_a = scaler.transform(a_test_x.iloc[:, 1:])
 # autoencoder.test_model(autoencoder.autoencoder, x_test_a)
 
 # print('Encoding data...')
-# a_full_data = pd.read_csv('data/processed_data/autoencoder_data/full_x.csv', index_col=0)
+# a_full_data = pd.read_csv('sample_data/processed_data/autoencoder_data/full_x.csv', index_col=0)
 # a_scaled_full = pd.DataFrame(scaler.transform(a_full_data.iloc[:, 1:]))
-# autoencoder.encode_data(a_scaled_full, csv_path='nn_data/full_x.csv')
+# autoencoder.encode_data(a_scaled_full, csv_path='sample_data/processed_data/nn_data/full_x.csv')
 
 # print('Processing data...')
 # preprocess = DataProcessing(0.8)
-# df1 = pd.read_csv("data/processed_data/nn_data/full_x.csv", index_col=0) 
-# df2 = pd.read_csv('data/processed_data/autoencoder_data/full_y.csv', index_col=0)
+# df1 = pd.read_csv("sample_data/processed_data/nn_data/full_x.csv", index_col=0) 
+# df2 = pd.read_csv('sample_data/processed_data/autoencoder_data/full_y.csv', index_col=0)
 # fulldata, y_values, train_x, train_y, test_x, test_y =  preprocess.make_train_test(df_x=df1, df_y=df2, window=1, 
 # csv_path="rf_data", has_y=True, binary_y=True, save_csv=True)
-# y = pd.read_csv('data/processed_data/rf_data/full_y.csv', index_col=0)
+# y = pd.read_csv('sample_data/processed_data/rf_data/full_y.csv', index_col=0)
 # preprocess.check_labels(y)
 
 print('Loading data...')
-train_x = pd.read_csv('data/processed_data/rf_data/train_x.csv', index_col=0)
-train_y = pd.read_csv('data/processed_data/rf_data/train_y.csv', index_col=0)
-test_x = pd.read_csv('data/processed_data/rf_data/test_x.csv', index_col=0)
-test_y = pd.read_csv('data/processed_data/rf_data/test_y.csv', index_col=0)
+train_x = pd.read_csv('sample_data/processed_data/rf_data/train_x.csv', index_col=0)
+train_y = pd.read_csv('sample_data/processed_data/rf_data/train_y.csv', index_col=0)
+test_x = pd.read_csv('sample_data/processed_data/rf_data/test_x.csv', index_col=0)
+test_y = pd.read_csv('sample_data/processed_data/rf_data/test_y.csv', index_col=0)
 print(train_x.head())
 print(train_y.shape)
 

@@ -8,7 +8,7 @@ class DataProcessing:
         self.split = split
     
     def make_features(self, file_path, window, csv_path, make_y=True, verbose=True, save_csv=False):
-        df = pd.read_csv(f"data/processed_data/{file_path}", index_col=0)
+        df = pd.read_csv(f"{file_path}", index_col=0)
         print(df.shape)
         cols = df.columns
         #print(type(df[cols[1]].iloc[1]))
@@ -47,7 +47,7 @@ class DataProcessing:
             print(df.tail())
             print(df.head())
         if save_csv:
-            df.to_csv(f'data/processed_data/{csv_path}/full_features.csv')
+            df.to_csv(f'{csv_path}/full_features.csv')
         return df
 
     def make_train_test(self, df_x, df_y, window, csv_path, has_y=False, binary_y=False, save_csv=False):

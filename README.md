@@ -54,6 +54,8 @@ pip install -r requirements.txt
 python run.py
 ```
 
+*Note: Due to GitHub file size restrictions, I have only uploaded part of the data (1 million rows), so the model results may vary from the one shown below.*
+
 ## Bar Sampling
 
 Running machine learning algorithms, or any other statistical models, directly on tick level data often leads to poor results, due to the high level of noise caused by the bid-ask bounce, and the high nonlinearity in the nature of the data. Therefore, we need to sample the data at some interval (which can be decided depending on the frequency of the predictive model). The sampling that we are used to seeing is time sampled (we get bars every 1min), but this is known to exhibit non stationarities and the returns are not normally distributed. So, as explained in Advances in Financial Machine Learning, we are going to sample it according to the number of ticks, or the amount of volume or the amount of dollars traded. These bars show better statistical properties and are preferable for machine learning applications.

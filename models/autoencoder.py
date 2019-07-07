@@ -58,6 +58,6 @@ class AutoEncoder:
 
         train_coded = pd.DataFrame(coded_train, index=np.arange(len(coded_train)), columns=np.arange(20))
         if save_csv:
-            train_coded.to_csv(f"data/processed_data/{csv_path}")
+            train_coded.to_csv(f"{csv_path}")
         return train_coded
     
